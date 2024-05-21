@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Main styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button styling */
+button {
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, font-size 0.3s, color 0.3s, transform 0.2s;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #feb47b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    font-size: 18px;
+    color: white;
+}
+
+/* Input styling */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 10px 0;
+    transition: border-color 0.3s, color 0.3s;
+    width: 100%;
+    max-width: 250px;
+}
+
+input[type="text"]:focus {
+    border-color: #ff7e5f;
+}
+
+input[type="text"]::placeholder {
+    color: gray;
+}
+
+input[type="text"]:focus::placeholder {
+    color: lightgray;
+}
+
+/* Link styling */
+a {
+    color: #ff7e5f;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s, font-weight 0.3s, transform 0.2s;
+    margin: 10px 0;
+}
+
+a:hover {
+    color: #feb47b;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+a:active {
+    font-weight: bold;
+}
+
+/* Note styling */
+.note {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #666;
+}
